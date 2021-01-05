@@ -1,0 +1,10 @@
+html {
+  background-color: #d3e9fc;
+}
+
+.credit-card-form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

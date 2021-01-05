@@ -1,0 +1,271 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 100px 25px 25px 25px;
+  border-radius: 5px;
+  border: 2px soild #7b7b7b;
+  -moz-box-shadow: 0 0 40px #a9a9a9;
+  -webkit-box-shadow: 0 0 40px #a9a9a9;
+  box-shadow: 0 0 30px #769bbb;
+  position: relative;
+  top: 40px;
+} 
+
+.form {
+
+  input:focus,
+  select:focus {
+    outline: none !important;
+    border: 1px solid #53a0d8;
+    box-shadow: 0px 5px 20px #dadada;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  /* Chrome, Safari, Edge, Opera - Removes arrows from input=number */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input#cvv {
+    width: 6rem;
+  }
+
+  select {
+    padding: 10px;
+    margin: 0px 10px 0px 0px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 4px 0px;
+  }
+
+  &__credit-card {
+    position: absolute;
+    top: -205px;
+    background: linear-gradient(
+      142deg,
+      rgba(2, 0, 41, 1) 0%,
+      rgba(0, 44, 91, 1) 44%,
+      rgba(0, 120, 214, 1) 100%
+    );
+    height: 11.5rem;
+    width: 18.8rem;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 40px#a9a9a9;
+    -webkit-box-shadow: 0 0 40px #a9a9a9;
+    box-shadow: 0 0 30px #365067;
+
+    &--container {
+        background-color: transparent;
+        width: 300px;
+        perspective: 1000px;
+        position: absolute;
+    }
+
+    &--container-inner {
+        position: relative;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &--flip {
+      transform: rotateY(-180deg);
+    }
+
+    &--back {
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+      }
+
+    &--card-number {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &--input-container {
+      display: flex;
+      width: 100%;
+
+      label {
+        color: #b0b0b0;
+        margin: 15px 10px 15px 15px;
+      }
+
+      input {
+        width: 100%;
+        color: white;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &--name-date {
+      position: absolute;
+      bottom: 0;
+
+      input {
+        text-align: left;
+        padding: 5px 0px;  
+      }
+    }
+
+    &--expires {
+      display: flex;
+      color: white;
+      width: 4rem;
+
+      span {
+          font-size: 0.9rem;
+      }
+    }
+
+    &--black-scan-line {
+      width: 100%;
+      background-color: black;
+      height: 35px;
+      position: relative;
+      top: 20px;
+    }
+
+    &--white-cvv-line {
+      width: 100%;
+      position: relative;
+      top: 20px;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        width: 87%;
+        color: #b0b0b0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        text-align: right;
+        width: 87%;
+        background-color: white;
+      }
+    }
+  }
+  
+  &__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    span {
+      margin: 4px 0px;
+    }
+
+    &--expiration-cvv {
+      display: flex;
+      align-items: center;
+    }
+
+    &--expiration {
+      width: 66.6%;
+
+      label {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &--cvv {
+      margin: 0px 0px 0px 15px;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    background-color: #0055d4;
+    color: white;
+    margin: 25px 0px 0px;
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#mastercard-logo-front {
+    position: absolute;
+    width: 40px;
+    right: 0px;
+    padding: 15px;
+  }
+  
+  #card-chip {
+    position: absolute;
+    width: 40px;
+    padding: 10px 15px;
+    left: 0;
+  }
+
+  #credit-card-number {
+    font-size: 1.1rem;
+  }
+
+  #card-holder {
+    flex-basis: 40rem;
+  }
+
+  #month {
+    margin-right: -20px;
+  }
+  
+  #year {
+    padding-left: 2px;
+  }
+
+  #mastercard-logo-back {
+    position: absolute;
+    width: 40px;
+    right: 0px;
+    bottom: 0;
+    padding: 15px;
+  }

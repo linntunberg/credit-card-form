@@ -3,6 +3,8 @@
 Deployed with Netlify:
 https://creditcardform-linntunberg.netlify.app/
 
+A mockup of a credit card form with validation.
+
 ### `npm install`
 - Installs all needed packages locally in order to run the app on your machine
 

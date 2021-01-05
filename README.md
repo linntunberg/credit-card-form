@@ -1,4 +1,4 @@
-# Credit Card Form - React.js
+# Credit Card Form
 
 Deployed with Netlify:
 https://creditcardform-linntunberg.netlify.app/

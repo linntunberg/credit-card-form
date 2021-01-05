@@ -1,5 +1,8 @@
 # Credit Card Form - React.js
 
+Deployed with Netlify:
+https://creditcardform-linntunberg.netlify.app/
+
 ### `npm install`
 - Installs all needed packages locally in order to run the app on your machine
 
@@ -15,5 +18,4 @@
 - Builds the app for production to the build folder.
 - Bundles React and optimizes the build for the best performance.
 
-Deployed with Netlify:
-https://creditcardform-linntunberg.netlify.app/
+

@@ -1,5 +1,7 @@
 # Credit Card Form - React.js
 
+### `npm install`
+- Installs all needed packages locally in order to run the app on your machine
 
 ### `npm start`
 - Runs the app in development mode. In order to view in browser, go to http://localhost:3000

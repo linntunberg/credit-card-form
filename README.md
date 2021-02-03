@@ -1,9 +1,9 @@
 # Credit Card Form
 
+- A credit card form with form validation, built with React.js and SASS.
+
 Deployed with Netlify:
 https://creditcardform-linntunberg.netlify.app/
-
-- A credit card form built with React.js and SASS. Includes form validation.
 
 ### `npm install`
 - Installs all needed packages locally in order to run the app on your machine
